@@ -1,3 +1,5 @@
+
+#Plot1
 consumption  = read.table("household_power_consumption.txt", sep=";", header=TRUE, stringsAsFactors=FALSE)
 
 needed_data_1_2 = subset(consumption, 
@@ -6,3 +8,4 @@ needed_data_1_2 = subset(consumption,
   )
 
 hist(as.numeric(needed_data_1_2$Global_active_power),  col="red", main="Global Active Power")
+
